@@ -34,8 +34,9 @@ header {
 
 .hamburger {
   position: absolute;
-  padding-right: 1rem;
-  padding-top:  1rem;
+  right: 0rem;
+  top:  0rem;
+  padding: 1rem 1rem 2rem 2rem;
   display: flex;
   background: transparent;
   border: none;

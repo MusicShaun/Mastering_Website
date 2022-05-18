@@ -1,10 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: roboto, poppins, nunito, montserrat;
-}
-
 header {
   top: 0%;
   left: 0%;
@@ -68,6 +61,7 @@ header {
   top: 0;
   right: 0;
   width: 100vw;
+  height: 100%;
   opacity: 0.98;
   visibility: hidden;
   z-index: 98;
@@ -86,7 +80,6 @@ header {
   overflow: hidden;
   background: rgba(23, 13, 1, 0.91);
   list-style-type: none;
-  padding-right: 1rem;
   transform: translatey(-100%);
   -webkit-transform: translatey(-100%);
   -moz-transform: translatey(-100%);
@@ -953,6 +946,13 @@ body {
   color: black;
   width: 100vw;
   line-height: 1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: roboto, poppins, nunito, montserrat;
 }
 
 .excluding-home {

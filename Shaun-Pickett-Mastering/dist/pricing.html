@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&family=Nunito&family=Poppins:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <title>Pricing</title>
+</head>
+
+<header>
+
+  <div class="logo">
+    <div class="logo_wrap">
+      <a href="./index.html">
+      <img src="img/logo.png" alt="">
+      </a>
+    </div>
+  </div>
+
+    <!-- ---- HAMBURGER ---- -->
+  <div class="hamburger">
+    <div class="hamburger_container" onclick="myFunction(this)">
+        <div class="hamburger_bar1"></div>
+        <div class="hamburger_bar2"></div>
+        <div class="hamburger_bar3"></div>
+    </div>
+    <script>
+    function myFunction(x) {
+        x.classList.toggle("change");}
+    </script>
+  </div>
+    <!-- ---- NAV SLIDER ---- -->
+  <nav class="nav">
+    <ul class="nav_ul">
+      <li class="nav_ul-list"><a class="nav_link" href="index.html">Home</a>
+      </li>
+      <li class="nav_ul-list"><a class="nav_link" href="about.html">About</a>
+      </li>
+      <li class="nav_ul-list active"><a class="nav_link" href="pricing.html">Pricing</a>
+      </li>
+      <li class="nav_ul-list"><a class="nav_link" href="examples.html">Examples</a>
+      </li>
+      <li class="nav_ul-list"><a class="nav_link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>  
+</header>
+
+
+
+
+
+
+<body class="excluding-home">
+
+
+
+
+
+
+  <div class="pricing">
+      <div class="pricing_container">
+
+        <img src="img/mixer.png" alt="">
+
+        <div class="pricing_container-text">
+            <h2>Stem Mastering
+              <h4>(2-8 stems)</h4>
+            </h2>
+            <ul>
+                <li>1 track<span>$90 US</span></li>
+                <li>2+ track (10% discount)<span>$81 US per track</span></li>
+                <li>Album 8+ tracks (15% discount)<span>$76.5 US per track</span></li>
+            </ul>
+        </div>
+
+      </div>
+  </div>            
+
+
+
+  <div class="pricing">
+    <div class="pricing_container">
+
+      <img src="img/mix-controls.png" alt="">
+
+      <div  class="pricing_container-text">
+          <h2>Mixing<h4>(25 stem limit)</h4></h2>
+          <ul>
+              <li>Mix Touch up (3 hours)<span>$100 US</span></li>
+              <li>Mix clean up (5 hours)<span>$150 US</span></li>
+              <li id="borderkill">Short mix & master<span>$150 US</span></li>
+              <li id="subtext">(3 hours capped mixing and a full stem master</li>
+              <li>Day rate (8 hours)<span>$220 US</span></li>
+          </ul>
+      </div>
+    </div>     
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

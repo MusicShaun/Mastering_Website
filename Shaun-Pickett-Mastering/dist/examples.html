@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&family=Nunito&family=Poppins:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <title>Examples</title>
+</head>
+
+<header>
+
+  <div class="logo">
+    <div class="logo_wrap">
+      <a href="./index.html">
+      <img src="img/logo.png" alt="">
+      </a>
+    </div>
+  </div>
+
+    <!-- ---- HAMBURGER ---- -->
+  <div class="hamburger">
+    <div class="hamburger_container" onclick="myFunction(this)">
+        <div class="hamburger_bar1"></div>
+        <div class="hamburger_bar2"></div>
+        <div class="hamburger_bar3"></div>
+    </div>
+    <script>
+    function myFunction(x) {
+        x.classList.toggle("change");}
+    </script>
+  </div>
+    <!-- ---- NAV SLIDER ---- -->
+  <nav class="nav">
+    <ul class="nav_ul">
+      <li class="nav_ul-list"><a class="nav_link" href="index.html">Home</a>
+      </li>
+      <li class="nav_ul-list"><a class="nav_link" href="about.html">About</a>
+      </li>
+      <li class="nav_ul-list"><a class="nav_link" href="pricing.html">Pricing</a>
+      </li>
+      <li class="nav_ul-list active"><a class="nav_link" href="examples.html">Examples</a>
+      </li>
+      <li class="nav_ul-list"><a class="nav_link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>  
+</header>
+
+<body class="excluding-home">
+
+  <div class="examples_text">
+    <h1>My Mastering</h1>
+    <p>Click play below</p>
+  </div>
+
+  <div class="examples">
+
+    <div class="examples_container" id="player-color1">
+      <div class="examples_container-title">
+        Moomba
+      </div>
+      <svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg" style="--icon-color:black;">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3333 58.3289L38.4242 51.084L39.5761 54.9145L15.4852 62.1594L14.3333 58.3289ZM39.5649 75.7036L15.474 82.7954L14.3444 78.9582L38.4354 71.8664L39.5649 75.7036Z" fill="#B500FF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M114 26.2656V98.2864C114 108.157 105.922 116.123 96 116.123C86.0783 116.123 78 108.157 78 98.2864C78 88.4162 86.0783 80.4497 96 80.4497C101.647 80.4497 106.697 83.0303 110 87.0738V53.4008L58 70.0521V110.164C58 120.034 49.9217 128.001 40 128.001C30.0783 128.001 22 120.034 22 110.164C22 100.294 30.0783 92.3272 40 92.3272C45.647 92.3272 50.6968 94.9079 54 98.9514V45.3545L114 26.2656ZM54 110.164C54 102.541 47.7514 96.3272 40 96.3272C32.2486 96.3272 26 102.541 26 110.164C26 117.786 32.2486 124.001 40 124.001C47.7514 124.001 54 117.786 54 110.164ZM58 65.8521L110 49.2007V31.7358L58 48.2795V65.8521ZM110 98.2864C110 90.6639 103.751 84.4497 96 84.4497C88.2486 84.4497 82 90.6639 82 98.2864C82 105.909 88.2486 112.123 96 112.123C103.751 112.123 110 105.909 110 98.2864Z" fill="black"></path></svg>
+      
+      <div class="examples_container-button">
+        <button>
+            <span><audio src="img/7-Bro.wav" controls class="audio-tag"></audio>
+            </span>
+        </button>
+      </div>
+    </div>
+
+<!-- PLAYER 2 -->
+    <div class="examples_container" id="player-color2">
+      <div class="examples_container-title">
+        House
+      </div>
+      <svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg" style="--icon-color:black;">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3333 58.3289L38.4242 51.084L39.5761 54.9145L15.4852 62.1594L14.3333 58.3289ZM39.5649 75.7036L15.474 82.7954L14.3444 78.9582L38.4354 71.8664L39.5649 75.7036Z" fill="#B500FF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M114 26.2656V98.2864C114 108.157 105.922 116.123 96 116.123C86.0783 116.123 78 108.157 78 98.2864C78 88.4162 86.0783 80.4497 96 80.4497C101.647 80.4497 106.697 83.0303 110 87.0738V53.4008L58 70.0521V110.164C58 120.034 49.9217 128.001 40 128.001C30.0783 128.001 22 120.034 22 110.164C22 100.294 30.0783 92.3272 40 92.3272C45.647 92.3272 50.6968 94.9079 54 98.9514V45.3545L114 26.2656ZM54 110.164C54 102.541 47.7514 96.3272 40 96.3272C32.2486 96.3272 26 102.541 26 110.164C26 117.786 32.2486 124.001 40 124.001C47.7514 124.001 54 117.786 54 110.164ZM58 65.8521L110 49.2007V31.7358L58 48.2795V65.8521ZM110 98.2864C110 90.6639 103.751 84.4497 96 84.4497C88.2486 84.4497 82 90.6639 82 98.2864C82 105.909 88.2486 112.123 96 112.123C103.751 112.123 110 105.909 110 98.2864Z" fill="black"></path></svg>
+      
+      <div class="examples_container-button">
+        <button>
+            <span><audio src="img/4-Duskus.wav" controls class="audio-tag"></audio>
+            </span>
+        </button>
+      </div>
+    </div>
+
+<!-- PLAYER 3 -->
+<div class="examples_container" id="player-color3">
+  <div class="examples_container-title">
+    Trap
+  </div>
+  <svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg" style="--icon-color:black;">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3333 58.3289L38.4242 51.084L39.5761 54.9145L15.4852 62.1594L14.3333 58.3289ZM39.5649 75.7036L15.474 82.7954L14.3444 78.9582L38.4354 71.8664L39.5649 75.7036Z" fill="#B500FF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M114 26.2656V98.2864C114 108.157 105.922 116.123 96 116.123C86.0783 116.123 78 108.157 78 98.2864C78 88.4162 86.0783 80.4497 96 80.4497C101.647 80.4497 106.697 83.0303 110 87.0738V53.4008L58 70.0521V110.164C58 120.034 49.9217 128.001 40 128.001C30.0783 128.001 22 120.034 22 110.164C22 100.294 30.0783 92.3272 40 92.3272C45.647 92.3272 50.6968 94.9079 54 98.9514V45.3545L114 26.2656ZM54 110.164C54 102.541 47.7514 96.3272 40 96.3272C32.2486 96.3272 26 102.541 26 110.164C26 117.786 32.2486 124.001 40 124.001C47.7514 124.001 54 117.786 54 110.164ZM58 65.8521L110 49.2007V31.7358L58 48.2795V65.8521ZM110 98.2864C110 90.6639 103.751 84.4497 96 84.4497C88.2486 84.4497 82 90.6639 82 98.2864C82 105.909 88.2486 112.123 96 112.123C103.751 112.123 110 105.909 110 98.2864Z" fill="black"></path></svg>
+  
+  <div class="examples_container-button">
+    <button>
+        <span><audio src="img/15-Brillz.wav" controls class="audio-tag"></audio>
+        </span>
+    </button>
+  </div>
+</div>
+
+
+<!-- PLAYER 4 -->
+<div class="examples_container" id="player-color4">
+  <div class="examples_container-title">
+    Bass House
+  </div>
+  <svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg" style="--icon-color:black;">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3333 58.3289L38.4242 51.084L39.5761 54.9145L15.4852 62.1594L14.3333 58.3289ZM39.5649 75.7036L15.474 82.7954L14.3444 78.9582L38.4354 71.8664L39.5649 75.7036Z" fill="#B500FF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M114 26.2656V98.2864C114 108.157 105.922 116.123 96 116.123C86.0783 116.123 78 108.157 78 98.2864C78 88.4162 86.0783 80.4497 96 80.4497C101.647 80.4497 106.697 83.0303 110 87.0738V53.4008L58 70.0521V110.164C58 120.034 49.9217 128.001 40 128.001C30.0783 128.001 22 120.034 22 110.164C22 100.294 30.0783 92.3272 40 92.3272C45.647 92.3272 50.6968 94.9079 54 98.9514V45.3545L114 26.2656ZM54 110.164C54 102.541 47.7514 96.3272 40 96.3272C32.2486 96.3272 26 102.541 26 110.164C26 117.786 32.2486 124.001 40 124.001C47.7514 124.001 54 117.786 54 110.164ZM58 65.8521L110 49.2007V31.7358L58 48.2795V65.8521ZM110 98.2864C110 90.6639 103.751 84.4497 96 84.4497C88.2486 84.4497 82 90.6639 82 98.2864C82 105.909 88.2486 112.123 96 112.123C103.751 112.123 110 105.909 110 98.2864Z" fill="black"></path></svg>
+  
+  <div class="examples_container-button">
+    <button>
+        <span><audio src="img/8-anthony.wav" controls class="audio-tag"></audio>
+        </span>
+    </button>
+  </div>
+</div>
+
+
+<!-- PLAYER 5 -->
+<div class="examples_container" id="player-color5">
+  <div class="examples_container-title">
+    Dubstep
+  </div>
+  <svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg" style="--icon-color:black;">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3333 58.3289L38.4242 51.084L39.5761 54.9145L15.4852 62.1594L14.3333 58.3289ZM39.5649 75.7036L15.474 82.7954L14.3444 78.9582L38.4354 71.8664L39.5649 75.7036Z" fill="#B500FF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M114 26.2656V98.2864C114 108.157 105.922 116.123 96 116.123C86.0783 116.123 78 108.157 78 98.2864C78 88.4162 86.0783 80.4497 96 80.4497C101.647 80.4497 106.697 83.0303 110 87.0738V53.4008L58 70.0521V110.164C58 120.034 49.9217 128.001 40 128.001C30.0783 128.001 22 120.034 22 110.164C22 100.294 30.0783 92.3272 40 92.3272C45.647 92.3272 50.6968 94.9079 54 98.9514V45.3545L114 26.2656ZM54 110.164C54 102.541 47.7514 96.3272 40 96.3272C32.2486 96.3272 26 102.541 26 110.164C26 117.786 32.2486 124.001 40 124.001C47.7514 124.001 54 117.786 54 110.164ZM58 65.8521L110 49.2007V31.7358L58 48.2795V65.8521ZM110 98.2864C110 90.6639 103.751 84.4497 96 84.4497C88.2486 84.4497 82 90.6639 82 98.2864C82 105.909 88.2486 112.123 96 112.123C103.751 112.123 110 105.909 110 98.2864Z" fill="black"></path></svg>
+  
+  <div class="examples_container-button">
+    <button>
+        <span><audio src="img/Plastic.wav" controls class="audio-tag"></audio>
+        </span>
+    </button>
+  </div>
+</div>
+
+
+<!-- PLAYER 6 -->
+<div class="examples_container" id="player-color6">
+  <div class="examples_container-title">
+    Grime
+  </div>
+  <svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg" style="--icon-color:black;">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3333 58.3289L38.4242 51.084L39.5761 54.9145L15.4852 62.1594L14.3333 58.3289ZM39.5649 75.7036L15.474 82.7954L14.3444 78.9582L38.4354 71.8664L39.5649 75.7036Z" fill="#B500FF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M114 26.2656V98.2864C114 108.157 105.922 116.123 96 116.123C86.0783 116.123 78 108.157 78 98.2864C78 88.4162 86.0783 80.4497 96 80.4497C101.647 80.4497 106.697 83.0303 110 87.0738V53.4008L58 70.0521V110.164C58 120.034 49.9217 128.001 40 128.001C30.0783 128.001 22 120.034 22 110.164C22 100.294 30.0783 92.3272 40 92.3272C45.647 92.3272 50.6968 94.9079 54 98.9514V45.3545L114 26.2656ZM54 110.164C54 102.541 47.7514 96.3272 40 96.3272C32.2486 96.3272 26 102.541 26 110.164C26 117.786 32.2486 124.001 40 124.001C47.7514 124.001 54 117.786 54 110.164ZM58 65.8521L110 49.2007V31.7358L58 48.2795V65.8521ZM110 98.2864C110 90.6639 103.751 84.4497 96 84.4497C88.2486 84.4497 82 90.6639 82 98.2864C82 105.909 88.2486 112.123 96 112.123C103.751 112.123 110 105.909 110 98.2864Z" fill="black"></path></svg>
+  
+  <div class="examples_container-button">
+    <button>
+        <span><audio src="img/9-Massappeals .wav" controls class="audio-tag"></audio>
+        </span>
+    </button>
+  </div>
+</div>
+
+</div>
+
+
+<!-- NEXT PAGE SET OF 6 PLAyERS  -->
+<div class="examples_text">
+  <h1>Producing, Mixing & Mastering</h1>
+  <p>Click play below</p>
+</div>
+
+<div class="examples">
+
+  <div class="examples_container" id="player-color7">
+    <div class="examples_container-title">
+      Trap
+    </div>
+    <svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg" style="--icon-color:black;">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3333 58.3289L38.4242 51.084L39.5761 54.9145L15.4852 62.1594L14.3333 58.3289ZM39.5649 75.7036L15.474 82.7954L14.3444 78.9582L38.4354 71.8664L39.5649 75.7036Z" fill="#B500FF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M114 26.2656V98.2864C114 108.157 105.922 116.123 96 116.123C86.0783 116.123 78 108.157 78 98.2864C78 88.4162 86.0783 80.4497 96 80.4497C101.647 80.4497 106.697 83.0303 110 87.0738V53.4008L58 70.0521V110.164C58 120.034 49.9217 128.001 40 128.001C30.0783 128.001 22 120.034 22 110.164C22 100.294 30.0783 92.3272 40 92.3272C45.647 92.3272 50.6968 94.9079 54 98.9514V45.3545L114 26.2656ZM54 110.164C54 102.541 47.7514 96.3272 40 96.3272C32.2486 96.3272 26 102.541 26 110.164C26 117.786 32.2486 124.001 40 124.001C47.7514 124.001 54 117.786 54 110.164ZM58 65.8521L110 49.2007V31.7358L58 48.2795V65.8521ZM110 98.2864C110 90.6639 103.751 84.4497 96 84.4497C88.2486 84.4497 82 90.6639 82 98.2864C82 105.909 88.2486 112.123 96 112.123C103.751 112.123 110 105.909 110 98.2864Z" fill="black"></path></svg>
+    
+    <div class="examples_container-button">
+      <button>
+          <span><audio src="img/dilly.wav" controls class="audio-tag"></audio>
+          </span>
+      </button>
+    </div>
+  </div>
+
+<!-- 22 PLAYER 2 -->
+  <div class="examples_container" id="player-color8">
+    <div class="examples_container-title">
+      Hip Hop
+    </div>
+    <svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg" style="--icon-color:black;">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3333 58.3289L38.4242 51.084L39.5761 54.9145L15.4852 62.1594L14.3333 58.3289ZM39.5649 75.7036L15.474 82.7954L14.3444 78.9582L38.4354 71.8664L39.5649 75.7036Z" fill="#B500FF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M114 26.2656V98.2864C114 108.157 105.922 116.123 96 116.123C86.0783 116.123 78 108.157 78 98.2864C78 88.4162 86.0783 80.4497 96 80.4497C101.647 80.4497 106.697 83.0303 110 87.0738V53.4008L58 70.0521V110.164C58 120.034 49.9217 128.001 40 128.001C30.0783 128.001 22 120.034 22 110.164C22 100.294 30.0783 92.3272 40 92.3272C45.647 92.3272 50.6968 94.9079 54 98.9514V45.3545L114 26.2656ZM54 110.164C54 102.541 47.7514 96.3272 40 96.3272C32.2486 96.3272 26 102.541 26 110.164C26 117.786 32.2486 124.001 40 124.001C47.7514 124.001 54 117.786 54 110.164ZM58 65.8521L110 49.2007V31.7358L58 48.2795V65.8521ZM110 98.2864C110 90.6639 103.751 84.4497 96 84.4497C88.2486 84.4497 82 90.6639 82 98.2864C82 105.909 88.2486 112.123 96 112.123C103.751 112.123 110 105.909 110 98.2864Z" fill="black"></path></svg>
+    
+    <div class="examples_container-button">
+      <button>
+          <span><audio src="img/Lazy.wav" controls class="audio-tag"></audio>
+          </span>
+      </button>
+    </div>
+  </div>
+
+<!-- 22 PLAYER 3 -->
+<div class="examples_container" id="player-color9">
+<div class="examples_container-title">
+  Dubstep
+</div>
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg" style="--icon-color:black;">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3333 58.3289L38.4242 51.084L39.5761 54.9145L15.4852 62.1594L14.3333 58.3289ZM39.5649 75.7036L15.474 82.7954L14.3444 78.9582L38.4354 71.8664L39.5649 75.7036Z" fill="#B500FF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M114 26.2656V98.2864C114 108.157 105.922 116.123 96 116.123C86.0783 116.123 78 108.157 78 98.2864C78 88.4162 86.0783 80.4497 96 80.4497C101.647 80.4497 106.697 83.0303 110 87.0738V53.4008L58 70.0521V110.164C58 120.034 49.9217 128.001 40 128.001C30.0783 128.001 22 120.034 22 110.164C22 100.294 30.0783 92.3272 40 92.3272C45.647 92.3272 50.6968 94.9079 54 98.9514V45.3545L114 26.2656ZM54 110.164C54 102.541 47.7514 96.3272 40 96.3272C32.2486 96.3272 26 102.541 26 110.164C26 117.786 32.2486 124.001 40 124.001C47.7514 124.001 54 117.786 54 110.164ZM58 65.8521L110 49.2007V31.7358L58 48.2795V65.8521ZM110 98.2864C110 90.6639 103.751 84.4497 96 84.4497C88.2486 84.4497 82 90.6639 82 98.2864C82 105.909 88.2486 112.123 96 112.123C103.751 112.123 110 105.909 110 98.2864Z" fill="black"></path></svg>
+
+<div class="examples_container-button">
+  <button>
+      <span><audio src="img/artillery.wav" controls class="audio-tag"></audio>
+      </span>
+  </button>
+</div>
+</div>
+
+
+<!-- 22 PLAYER 4 -->
+<div class="examples_container" id="player-color10">
+<div class="examples_container-title">
+  Indie Elec 
+</div>
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg" style="--icon-color:black;">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3333 58.3289L38.4242 51.084L39.5761 54.9145L15.4852 62.1594L14.3333 58.3289ZM39.5649 75.7036L15.474 82.7954L14.3444 78.9582L38.4354 71.8664L39.5649 75.7036Z" fill="#B500FF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M114 26.2656V98.2864C114 108.157 105.922 116.123 96 116.123C86.0783 116.123 78 108.157 78 98.2864C78 88.4162 86.0783 80.4497 96 80.4497C101.647 80.4497 106.697 83.0303 110 87.0738V53.4008L58 70.0521V110.164C58 120.034 49.9217 128.001 40 128.001C30.0783 128.001 22 120.034 22 110.164C22 100.294 30.0783 92.3272 40 92.3272C45.647 92.3272 50.6968 94.9079 54 98.9514V45.3545L114 26.2656ZM54 110.164C54 102.541 47.7514 96.3272 40 96.3272C32.2486 96.3272 26 102.541 26 110.164C26 117.786 32.2486 124.001 40 124.001C47.7514 124.001 54 117.786 54 110.164ZM58 65.8521L110 49.2007V31.7358L58 48.2795V65.8521ZM110 98.2864C110 90.6639 103.751 84.4497 96 84.4497C88.2486 84.4497 82 90.6639 82 98.2864C82 105.909 88.2486 112.123 96 112.123C103.751 112.123 110 105.909 110 98.2864Z" fill="black"></path></svg>
+
+<div class="examples_container-button">
+  <button>
+      <span><audio src="img/friends2.wav" controls class="audio-tag"></audio>
+      </span>
+  </button>
+</div>
+</div>
+
+
+<!-- 22 PLAYER 5 -->
+<div class="examples_container" id="player-color11">
+<div class="examples_container-title">
+  Rap
+</div>
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg" style="--icon-color:black;">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3333 58.3289L38.4242 51.084L39.5761 54.9145L15.4852 62.1594L14.3333 58.3289ZM39.5649 75.7036L15.474 82.7954L14.3444 78.9582L38.4354 71.8664L39.5649 75.7036Z" fill="#B500FF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M114 26.2656V98.2864C114 108.157 105.922 116.123 96 116.123C86.0783 116.123 78 108.157 78 98.2864C78 88.4162 86.0783 80.4497 96 80.4497C101.647 80.4497 106.697 83.0303 110 87.0738V53.4008L58 70.0521V110.164C58 120.034 49.9217 128.001 40 128.001C30.0783 128.001 22 120.034 22 110.164C22 100.294 30.0783 92.3272 40 92.3272C45.647 92.3272 50.6968 94.9079 54 98.9514V45.3545L114 26.2656ZM54 110.164C54 102.541 47.7514 96.3272 40 96.3272C32.2486 96.3272 26 102.541 26 110.164C26 117.786 32.2486 124.001 40 124.001C47.7514 124.001 54 117.786 54 110.164ZM58 65.8521L110 49.2007V31.7358L58 48.2795V65.8521ZM110 98.2864C110 90.6639 103.751 84.4497 96 84.4497C88.2486 84.4497 82 90.6639 82 98.2864C82 105.909 88.2486 112.123 96 112.123C103.751 112.123 110 105.909 110 98.2864Z" fill="black"></path></svg>
+
+<div class="examples_container-button">
+  <button>
+      <span><audio src="img/monster.wav" controls class="audio-tag"></audio>
+      </span>
+  </button>
+</div>
+</div>
+
+
+<!-- 22  PLAYER 6 -->
+<div class="examples_container" id="player-color12">
+<div class="examples_container-title">
+  Pop
+</div>
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg" style="--icon-color:black;">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3333 58.3289L38.4242 51.084L39.5761 54.9145L15.4852 62.1594L14.3333 58.3289ZM39.5649 75.7036L15.474 82.7954L14.3444 78.9582L38.4354 71.8664L39.5649 75.7036Z" fill="#B500FF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M114 26.2656V98.2864C114 108.157 105.922 116.123 96 116.123C86.0783 116.123 78 108.157 78 98.2864C78 88.4162 86.0783 80.4497 96 80.4497C101.647 80.4497 106.697 83.0303 110 87.0738V53.4008L58 70.0521V110.164C58 120.034 49.9217 128.001 40 128.001C30.0783 128.001 22 120.034 22 110.164C22 100.294 30.0783 92.3272 40 92.3272C45.647 92.3272 50.6968 94.9079 54 98.9514V45.3545L114 26.2656ZM54 110.164C54 102.541 47.7514 96.3272 40 96.3272C32.2486 96.3272 26 102.541 26 110.164C26 117.786 32.2486 124.001 40 124.001C47.7514 124.001 54 117.786 54 110.164ZM58 65.8521L110 49.2007V31.7358L58 48.2795V65.8521ZM110 98.2864C110 90.6639 103.751 84.4497 96 84.4497C88.2486 84.4497 82 90.6639 82 98.2864C82 105.909 88.2486 112.123 96 112.123C103.751 112.123 110 105.909 110 98.2864Z" fill="black"></path></svg>
+
+<div class="examples_container-button">
+  <button>
+      <span><audio src="img/Chasing.wav"" controls class="audio-tag"></audio>
+      </span>
+  </button>
+</div>
+</div>
+
+</div>
+
+
+
+<a class="top" href="#">Back to Top ↑</a>
+
+<script src="js/audio.js"></script>
+<script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

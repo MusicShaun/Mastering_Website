@@ -1,0 +1,176 @@
+@include media-md {
+  .hamburger {
+    visibility: hidden;
+  }
+  
+  .nav {
+    visibility: visible ;
+    height: 80px;
+    
+    &_ul {
+      display: block;
+      text-align: right;
+      background: transparent;
+      @include transformery($zero);
+      height: 80px;
+
+      &-list {
+        display: inline;
+        padding-right: 1.5rem;
+      }
+    }
+    &_link {
+      font-size: 1.3rem;
+    }
+  }
+
+  .homeboy {
+    width: 100vw;
+    overflow: hidden;
+  }
+  .home {
+    margin-top: 10vh;
+    height: 80vh;
+
+    &_containers {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5rem;
+      width: 60%;
+
+      &-1 {
+        text-align: left;
+      }
+      &-2 {
+        margin-top: 2;
+      }
+    }
+  }
+
+  #tree{
+    position: absolute;
+    left: -5.2rem;
+    top: 16rem;
+    z-index: 5;
+    visibility: visible;
+    width: 380px;
+    height: 380px;
+    opacity: 0.6;
+  }
+
+
+  body .about_text h1 {
+    font-size: 4rem;
+    font-weight: 400;
+  }
+
+  body .pricing_container img{
+    display: flex;
+  }
+
+}
+// END of MD =-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
+
+
+
+@include media-small {
+  body .pricing_container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@include media-examples {
+  body .examples {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+
+    &_container {
+      height: 300px;
+      width: 90%;
+    }
+  }
+}
+
+@include media-lg {
+  .home {
+    margin-top: 13vh;
+    height: 80vh; 
+  }
+  #tree{
+    top: 19rem;
+  }
+  body .examples  {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  body .contact_icons {
+    width: 85%;
+    justify-content: space-around;
+    padding: 1.25rem 5rem;
+  }
+  body .contact form {
+      width: 70%;
+  }
+  body .contact {
+    margin: auto;
+    display: flex;
+    flex-direction: row; 
+    grid-gap: 3rem;
+    width: 90vw;
+    padding: 0 3rem;
+
+    & form {
+      width: 80%;
+    }
+    &_list {
+      margin-bottom: 4rem;
+  
+      & li{
+        margin-top: 0rem;
+        font-size: 1.4rem;
+        padding-bottom: 4rem;
+      }
+    }
+  }
+  body .contact_icons {
+    width: 100%;
+    justify-content: space-around;
+    padding: 1.25rem 3rem;
+  }
+  body .contact form, body .contact_container {
+    width: 60%;
+  }
+  body .pricing_container {
+    width: 65%;
+  }
+}
+
+@include media-xl {
+  .home {
+    margin-top: 17vh;
+    height: 80vh; 
+  }
+  body .examples  {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  body .contact form, body .contact_container {
+    width: 40%;
+  }
+  #tree{
+    top: 19rem;
+  }
+  body .about_text h2 {
+    font-size: 3rem;
+  }
+  body .pricing_container {
+    width: 52%;
+  }
+}
+
+
+

@@ -1,0 +1,154 @@
+
+
+header {
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 76px;
+  background: $background-color-dark;
+}
+
+
+.logo {
+  position: absolute;
+  display: flex;
+  left: 0.4rem;
+  top: 1rem;
+  width: 50vw;
+  height: 76px;
+
+    &_wrap {
+      z-index: 99;
+      
+      & img {
+      height: calc(100% - 2rem);
+      filter: invert(1);
+      -webkit-filter: invert(1);
+      z-index: 99;
+      cursor: pointer;  
+      }
+  }
+}
+
+
+
+.hamburger {
+  position: absolute;
+  right: 1rem;
+  top:  1rem;
+  display: flex;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 99;
+
+  &_bar1, &_bar2, &_bar3 {
+    margin: 6px 0;
+    width: 35px;
+    height: 5px;
+    background-color: $white-color;
+    
+    @include transition-ease;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+
+
+
+.nav {
+  position:sticky;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: hidden; 
+  z-index: 98;
+
+  &.open {
+    visibility: visible;
+  }
+
+  &_ul {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background: $black-color;
+    list-style-type: none;
+    padding-right: 1rem;
+    @include transformery($negative100);
+    @include transition-slow;
+
+    &.open {
+      @include transformery($zero);
+    }
+
+    &-list {
+      @include transformerx($full-width);
+      @include transition-slow;
+
+    &.open {
+      @include transformerx($zero);
+
+      &.active > a {
+      color: $background-color;
+        }
+      }
+    }
+  }
+  &_link {
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 1.7rem 0;
+    font-weight: 400;
+    @include transition-slow ;
+    text-decoration: none;  
+    color: $white-color;
+    &:hover {
+      color: $hover-color; 
+    }
+
+  }
+
+}
+.nav_ul-list a:focus, .nav_ul-list a:active, .nav_ul-list a:visited {
+  text-decoration: none;
+  // color: inherit;
+}
+
+
+@for $i from 1 through 5 {
+  .nav_ul-list:nth-child(#{$i}) {
+    transition-delay: ($i * 0.20s) + 0.05s;
+  }
+}
+
+
+
+
+// HAMBURGER ANIMATION
+.change {
+  .hamburger {
+    &_bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+      margin-top: 8px;
+    }
+    &_bar2 {
+      opacity: 0;
+    }
+    &_bar3 {
+      transform:rotate(45deg) translate(-8px, -8px) ;
+      -webkit-transform:rotate(45deg) translate(-8px, -8px) ;
+      -moz-transform:rotate(45deg) translate(-8px, -8px) ;
+      -ms-transform:rotate(45deg) translate(-8px, -8px) ;
+      -o-transform:rotate(45deg) translate(-8px, -8px) ;
+    }
+  }
+}
+

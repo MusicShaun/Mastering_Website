@@ -1,0 +1,151 @@
+.contact-global{
+  margin-top: 5%;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background: white;
+  letter-spacing: 2px;
+  
+  &_container {
+    margin: auto;
+    width: 80%;
+    margin-top: 2rem;
+
+    &-form {
+      text-align: center;
+      padding-bottom: 1rem;
+
+      &-control {
+        padding: 1rem;
+        width: 100%;
+        min-width: 300px;
+        border: 2px solid $grey-dark-color;
+        @include border16;
+        text-align: left;
+        font-size: 1rem;
+        background: $white-color;
+      }
+    }
+  }
+  & form button {
+    margin-top: 15px;
+    margin-bottom: 1rem;
+    overflow-y: hidden;
+    height: 3rem;
+    width: 100%;
+    @include transition-ease;
+    border-radius: 8px;
+    border: $grey-dark-color solid 2px;
+    background-color: $button-color;
+
+    &:hover {
+      background-color: $hover-color;
+      @include transition-ease;
+      padding-top: 2.7rem;
+    }
+  }
+
+
+  &_list {
+    list-style-type: none;
+    padding-bottom: 2rem;
+
+    & li {
+    margin: auto;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 3rem;
+    width: 90%;
+    color: $black-color;
+    white-space: nowrap;
+      
+      & i {
+        padding-right: 1rem;
+        color: $grey-dark-color;
+      }
+    }
+  }
+  
+}
+
+
+.contact_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  padding: 1.25rem 0;
+  border-top: 1px $grey-dark-color solid;
+  border-bottom: 1px $grey-dark-color solid;
+
+  & svg {
+    position: relative;
+    @include icon-position;
+  }
+  & i {
+    position: relative;
+    @include youtube-position;
+  }
+
+  & li {
+   position: relative; 
+   display: inline-block;
+   margin: 0 0.3rem;
+   list-style-type: none;
+   color: $black-color;
+   background-color: rgb(227, 227, 227);
+   cursor: pointer; 
+
+   & a, a:visited, a:active, a:hover, a:link {
+     text-decoration: none;
+   } 
+  }
+
+  & li, li:after {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    @include transition-ease;
+  }
+  & li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    box-shadow: 0 0 0 1px $black-color;
+  }
+  & li:hover {
+    background-color: $black-color;
+  }
+  & li:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  }
+  & a:hover li {
+    color: $white-color;
+  }
+
+}
+.copyright {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: $black-color;
+}
+
+

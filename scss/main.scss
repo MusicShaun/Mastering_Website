@@ -15,7 +15,7 @@ html, body {
 body {
   background: $background-color;
   color: set-text-color($white-color);
-  height: 100vh;
+  width: 100vw;
   line-height: 1;
 }
 .excluding-home {

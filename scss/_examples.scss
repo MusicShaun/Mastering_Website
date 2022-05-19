@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
-  padding-bottom: 3rem;
+  margin-bottom: 2rem;
+
 
   &_text {
     text-align: center;
@@ -82,17 +83,23 @@
 
 
   // BACK TO TOP CLICK 
-  .top {
-    --offset: 300px;
-    position: sticky;
-    bottom: 1.5rem;
-    margin-left: calc(50% - 50px);
-    margin-top: calc(100vh + var(--offset));
+$offsetter: --offset;
 
+
+  .top {
+    bottom: 1.5rem;
+    margin-bottom: 3rem;
+    margin-left: calc(50% - 59px);
+
+    &_container {
     text-decoration: none;
     padding: 10px;
-    font-family: sans-serif;
     color: $white-color;
     background: rgba(0, 0, 0, 0.788);
-    border-radius: 100px;
+    border-radius: 4rem;
+    -webkit-border-radius: 4rem;
+    -moz-border-radius: 4rem;
+    -ms-border-radius: 4rem;
+    -o-border-radius: 4rem;
+    }
 }

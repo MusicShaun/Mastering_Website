@@ -638,7 +638,7 @@ header {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
-  padding-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .examples_text {
@@ -744,17 +744,21 @@ header {
 }
 
 .top {
-  --offset: 300px;
-  position: sticky;
   bottom: 1.5rem;
-  margin-left: calc(50% - 50px);
-  margin-top: calc(100vh + var(--offset));
+  margin-bottom: 3rem;
+  margin-left: calc(50% - 59px);
+}
+
+.top_container {
   text-decoration: none;
   padding: 10px;
-  font-family: sans-serif;
   color: #fcfffa;
   background: rgba(0, 0, 0, 0.788);
-  border-radius: 100px;
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
 }
 
 .contact-global {

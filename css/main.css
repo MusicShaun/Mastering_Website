@@ -10,9 +10,9 @@ header {
 .logo {
   position: absolute;
   display: flex;
-  left: 0.4rem;
+  left: 1rem;
   top: 1rem;
-  width: 50vw;
+  width: 60vw;
   height: 76px;
 }
 
@@ -26,6 +26,7 @@ header {
   -webkit-filter: invert(1);
   z-index: 99;
   cursor: pointer;
+  max-width: 220px;
 }
 
 .hamburger {
@@ -61,10 +62,11 @@ header {
   top: 0;
   right: 0;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   opacity: 0.98;
   visibility: hidden;
   z-index: 98;
+  overflow: hidden;
 }
 
 .nav.open {
@@ -76,7 +78,7 @@ header {
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   background: rgba(23, 13, 1, 0.91);
   list-style-type: none;

@@ -1,10 +1,12 @@
 
-
+#home-page-yscroll {
+  height: 100vh;
+}
 
 
 
 .home {
-  margin-top: 4rem;
+  margin-top: 8%;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -124,6 +126,10 @@
   }
 }
 
+#stupid-tree {
+  height: 300px;
+  margin-top: 0rem;
+}
 #tree {
   visibility: hidden;
 }

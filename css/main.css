@@ -186,8 +186,12 @@ header {
   -o-transform: rotate(45deg) translate(-8px, -8px);
 }
 
+#home-page-yscroll {
+  height: 100vh;
+}
+
 .home {
-  margin-top: 4rem;
+  margin-top: 8%;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -311,6 +315,11 @@ header {
   width: 100%;
 }
 
+#stupid-tree {
+  height: 300px;
+  margin-top: 0rem;
+}
+
 #tree {
   visibility: hidden;
 }
@@ -354,10 +363,6 @@ header {
     width: 100vw;
     overflow: hidden;
   }
-  .home {
-    margin-top: 10vh;
-    height: 80vh;
-  }
   .home_containers {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -371,11 +376,9 @@ header {
     margin-top: 2;
   }
   #tree {
-    position: absolute;
-    left: -5.2rem;
-    top: 16rem;
+    top: 0rem;
     z-index: 5;
-    visibility: visible;
+    visibility: hidden;
     width: 380px;
     height: 380px;
     opacity: 0.6;
@@ -408,12 +411,9 @@ header {
 }
 
 @media screen and (min-width: 1024px) {
-  .home {
-    margin-top: 13vh;
-    height: 80vh;
-  }
   #tree {
-    top: 19rem;
+    top: 3rem;
+    visibility: visible;
   }
   body .examples {
     grid-template-columns: 1fr 1fr 1fr;
@@ -461,10 +461,6 @@ header {
 }
 
 @media screen and (min-width: 1600px) {
-  .home {
-    margin-top: 17vh;
-    height: 80vh;
-  }
   body .examples {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -473,7 +469,7 @@ header {
     width: 40%;
   }
   #tree {
-    top: 19rem;
+    top: 6rem;
   }
   body .about_text h2 {
     font-size: 3rem;

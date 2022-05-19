@@ -571,6 +571,8 @@ header {
   font-size: 1.1rem;
   line-height: 1.2;
   padding: 2rem 1rem;
+  letter-spacing: 0.7px;
+  word-spacing: 2px;
 }
 
 .aboutcontent_container p span {

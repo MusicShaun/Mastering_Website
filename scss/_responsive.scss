@@ -75,6 +75,9 @@
   body .pricing_container {
     grid-template-columns: 1fr;
   }
+  #stupid-tree {
+    display: none;
+  }
 }
 
 @include media-examples {

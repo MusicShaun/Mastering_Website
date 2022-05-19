@@ -1,4 +1,5 @@
 header {
+  position: relative;
   top: 0%;
   left: 0%;
   width: 100%;
@@ -395,6 +396,9 @@ header {
 @media screen and (max-width: 767px) {
   body .pricing_container {
     grid-template-columns: 1fr;
+  }
+  #stupid-tree {
+    display: none;
   }
 }
 
